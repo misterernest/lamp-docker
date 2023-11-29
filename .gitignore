@@ -1,0 +1,13 @@
+# files ignored
+/nginx/*
+/php.ini/
+php.ini
+
+# files do not ignored
+!/app/*
+!/nginx/default.conf
+!.gitignore
+!docker-compose.yml
+!Dockerfile
+!README.md
+!/msyql/.gitignore
