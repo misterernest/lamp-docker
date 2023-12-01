@@ -2,9 +2,10 @@
 /nginx/*
 /php.ini/
 php.ini
+/app/*
 
 # files do not ignored
-!/app/*
+!/app/index.php
 !/nginx/default.conf
 !.gitignore
 !docker-compose.yml
