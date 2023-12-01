@@ -19,7 +19,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./app:/var/www/html
+      - ./src:/var/www/html
       - ./php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - mariadb
