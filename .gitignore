@@ -1,7 +1,5 @@
 # files ignored
 /nginx/*
-/php.ini/
-php.ini
 /src/*
 
 # files do not ignored
