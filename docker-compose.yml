@@ -2,6 +2,7 @@ services:
   # NGINX Service
   nginx:
     image: nginx:latest
+    platform: linux/arm64/v8
     ports:
       - "80:80"
     volumes:
@@ -27,6 +28,7 @@ services:
   # MariaDB Service
   mariadb:
     image: mariadb:latest
+    platform: linux/arm64/v8
     volumes:
       - mariadb_data:/var/lib/mysql
     environment:
@@ -38,7 +40,8 @@ services:
       - my_network
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: phpmyadmin:latest
+    platform: linux/arm64/v8
     environment:
       PMA_HOST: mariadb
       PMA_USER: root
